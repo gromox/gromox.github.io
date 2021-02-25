@@ -1,0 +1,108 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Gromox project webpage</title>
+</head>
+<style>
+@font-face {
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(va9E4kDNxMZdWfMOD5Vvl4jL.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(va9B4kDNxMZdWfMOD5VnLK3eRhf6.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+body {
+	font-family: "Fira Sans", sans-serif;
+	margin: 0;
+	display: flex;
+}
+h1 { font-weight: bold; font-size: 36pt; color: #303030; }
+p { font-size: 16pt; }
+</style>
+
+<body bgcolor="#b0b0c0">
+
+<div class="sidenav" style="padding: 2em;">
+
+<!-- birds seem to be a recurring theme in mail software, just following suit -->
+<p><img src="grammm_gromox_bird_gray.png" border="0" /></p>
+
+</div>
+
+<div style="max-width: 64em; padding: 2em;">
+
+<h1>Welcome to the Gromox project webpage</h1>
+
+<p>Gromox is the central groupware server component of grammm. It is capable of
+serving as a replacement for Microsoft Exchange and compatibles. Connectivity
+options include RPC/HTTP (Outlook Anywhere), IMAP, POP3, an
+SMTP-speaking LDA, and a PHP module with a Z-MAPI function subset.</p>
+
+<p>Gromox relies on other components to provide a sensibly complete mail
+system, such as Postfix as a mail transfer agent, and grammm-admin for user
+management. A webmail client interface is available with grammm-web. The grammm
+distribution ships these essentials and has a ready-to-run installation of
+Gromox.</p>
+
+<p>Support is available through grammm GmbH and its partners. See <a
+href="https://grammm.com/">https://grammm.com/</a> for details.</p>
+
+<p>The source code repository and technical issue tracker can be found at
+<a
+href="https://github.com/grammm-dev/gromox">https://github.com/grammm-dev/gromox</a>.</p>
+
+<h2><a name="news"></a>News</h2>
+
+<ul>
+
+<li><b>2021-03-30</b>. Version 0.19 was released. It has a number of logic
+fixes regarding moving mails within the same store, but using the FastStream
+ICS method (Outlook 2010).</li>
+
+<li><b>2021-03-25</b>. Version 0.18 was released. Incomplete RTF documents are
+now attempted to be decoded, and a failure in moving mails between two stores
+with grammm-web was addressed.</li>
+
+<li><b>2021-03-12</b>. Terse notification is given that Gromox is not affected
+by CVE-2021-26855, CVE-2021-26857, CVE-2021-26858, CVE-2021-27065.</li>
+
+<li><b>2021-03-06</b>. Version 0.17 was released. It
+bumps connection limits, and fixes an issue with IPv6
+connections.</li>
+
+<li><b>2021-02-25</b>. Version 0.16 was tagged. The built-in defaults have been
+refined so that alsmot no configuration files are needed in a minimal
+installation.</li>
+
+</ul>
+
+<h2><a name="dl"></a>Downloads</h2>
+
+<ul>
+<li><a
+href="https://github.com/grammm-dev/gromox/releases/tag/gromox-0.19">gromox-0.19
+tag on github</a></li>
+</ul>
+
+<h2>Further resources</h2>
+
+<ul>
+<li><a href="https://github.com/grammm-dev/gromox" target="_blank">Github
+page</a></li>
+<li><a
+href="https://github.com/grammm-dev/gromox/blob/master/doc/install.rst">Installation
+hints</a></li>
+<li><a href="https://github.com/grammm-dev/gromox/issues"
+target="_blank">Tickets</a></li>
+</ul>
+
+</div>
+</body>
+</html>

@@ -59,27 +59,58 @@ p { font-size: 16pt; }
 img { border: 0; }
 header { padding: 2em; }
 main { max-width: 64em; padding: 2em; }
-a, a[download] { font-family: monospace; }
-ul > li > a, #latest a { font-family: "Fira Sans", sans-serif; }
-#latest { display: block; text-align: center; }
-#latest a {
-	display: inline-block;
-	text-decoration: none;
-	background-color: #00cc00;
-	box-shadow: -0.1em -0.3em 0.5em #008000 inset;
-	color: #000000;
-	border-radius: 0.5em;
-	margin: 1em 2.2em;
-	padding: 0.4em 4em;
-}
-#latest span {
-	display: block;
-	font-size: 200%;
-}
+a[download] { font-family: monospace; }
+ul > li > a { font-family: "Fira Sans", sans-serif; }
 @media (prefers-color-scheme: dark) {
 	body { color: #eee; background: #121212; }
 	h1 { color: #a2a2a2; }
 	a { color: #809fff; }
+}
+
+div.button-container {
+	display: flex;
+	flex-wrap: wrap; /* allows wrapping when the row is full */
+	gap: 1em; /* space between buttons */
+	justify-content: flex-start;
+}
+
+div.button {
+	flex: 0 1 16em; /* makes all buttons equal width (150px) */
+	height: 6em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1em;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	text-align: center;
+	color: white;
+}
+div.button a {
+	color: white;
+}
+div.button a.nou {
+	text-decoration: none;
+}
+
+.button.b300 {
+	background-color: #684cba;
+	/*box-shadow: -0.1em -0.3em 0.5em #aa00aa inset;*/
+}
+.button.b280 {
+	background-color: #0051b9;
+}
+.button.b250 {
+	background-color: #006bbb;
+}
+.button.b220 {
+	background-color: #008cb7;
+}
+.button.b190 {
+	background-color: #008f86;
+}
+.button.b160 {
+	background-color: #009144;
 }
 </style>
 </head>
@@ -139,28 +170,22 @@ installation of Gromox.</p>
 
 <p>Support is available through grommunio GmbH and its partners. See <a
 href="https://grommunio.com/">grommunio.com</a> for details.
-A community forum is at <a
-href="https://community.grommunio.com/">community.grommunio.com</a>.</p>
 
-<p>The source code repository and technical issue tracker can be found at <a
-href="https://github.com/grommunio/gromox">https://github.com/grommunio/gromox</a>.</p>
-
-<div id="latest">
-<a download
-href="https://github.com/grommunio/gromox/releases/download/gromox-3.1/gromox-3.1.tar.zst">
-Latest Release
-<span>3.1 ⬇</span>
-</a>
+<div class="button-container">
+	<div class="button b160"><span>Latest Release<br><a
+	href="https://github.com/grommunio/gromox/releases/download/gromox-3.1/gromox-3.1.tar.zst"
+	>
+	<span style="font-size: 200%;">3.1 ⬇</span></a> (+ <a
+	href="https://github.com/grommunio/gromox/releases/download/gromox-3.1/gromox-3.1.tar.asc"
+	>sig</a>)</span>
+	</div>
+	<div class="button b190"><a
+	href="https://github.com/grommunio/gromox/blob/prime/doc/changelog.rst">Changelog
+	and developments since release</a></div>
+	<div class="button b250"><span>Issue tracker(s) and repo<br>
+	<a href="https://codeberg.org/grommunio/gromox">Codeberg (EU)</a> /<br><a
+	href="https://github.com/grommunio/gromox/issues">Github (MS)</a></span></div>
 </div>
-
-<h2>Downloads</h2>
-
-<ul>
-<li><a download
-href="https://github.com/grommunio/gromox/releases/download/gromox-3.1/gromox-3.1.tar.zst">gromox-3.1.tar.zst</a>
-(<a download
-href="https://github.com/grommunio/gromox/releases/download/gromox-3.1/gromox-3.1.tar.asc">.asc</a>)</li>
-</ul>
 
 </main>
 </body>
